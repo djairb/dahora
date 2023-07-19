@@ -1,0 +1,1524 @@
+@charset "UTF-8";
+
+/* Propriedades que se aplicam a todos os elementos da página. */
+* {
+	/* Remove a margem externa de todos os lados do elemento. */
+	margin: 0;
+
+	/* Remove o espaçamento interno de todos os lados do elemento. */
+	padding: 0;
+
+	/* Inclui o preenchimento e a borda na largura e altura. */
+	box-sizing: border-box;
+}
+
+body{
+
+	font-family: "Montserrat", sans-serif;
+
+
+
+}
+
+/*comecou
+*/
+
+  
+  
+/*slider fim
+*/
+
+
+#openMenu, #closeMenu {
+
+	
+	/* Remove a borda. */
+	border: none;
+
+	/* Remove a cor de fundo. */
+	background: none;
+
+	/* Tamanho da fonte. */
+	font-size: 30px;
+
+	/* Espessura da forte. */
+	font-weight: bold;
+
+	/* Margem ao redor do elemento              */
+	/* (superior, direito, inferior e esquerdo) */
+	padding: 0px 5px 0px 5px;
+
+	/* Muda o cursor do mouse para ponteiro.*/
+	cursor: pointer;
+
+	/* Oculta o elemento. */
+	display: none;
+}
+
+
+
+/* Formatação comum entre os elementos. */
+header, nav, main, footer {
+	/* Cor do fundo. */
+	
+
+	/* Exibição flexível.                          */
+	/* Torna o elemento um flex container          */
+	/* e os seus elementos internos em flex-itens. */
+	display: flex;
+
+	/* Margem externa de todos os lados. */
+	margin: 0;
+}
+
+header, main, footer{
+
+	width: 100%;
+    min-width: 320px;
+    max-width: 1920px;
+    margin: 0 auto;
+
+
+
+}
+/* Seletores para formatação individual. */
+
+header {
+
+	
+	/* Altura do elemento. */
+	height: 100px;
+
+	/* Junção de flex-grow, flex-shrink e flex-basis.  */
+	/* flex-grow – Habilidade de um flex item crescer. */
+	/* flex-shrink - Capacidade de redução do item.    */
+	/* flex-basis – Tamanho inicial do item.           */
+	flex: 1 1 100vw;
+
+
+	background-image: url('/assets/img/bg/header.jpg');
+	background-size: cover;
+	background-position: center;
+}
+
+
+
+
+nav {
+	
+	justify-content: flex-end;
+
+	
+	align-items: center;
+
+	           
+	flex: 1 1 200px;
+}
+
+nav a {
+	/* Margem de todos os lados. */
+	margin: 0 1%;
+
+	
+	font-size: 14pt;
+	font-weight: bold;
+}
+
+main {
+	
+	/* height: 100vh; */
+	
+
+	flex: 20 1 500px; 
+	
+
+	
+	flex-direction: column;
+	
+	margin: 0 auto;
+
+	background-image: url('/assets/img/bg/noticias.jpg');
+	background-size: contain;
+	background-position: center;
+	background-repeat: repeat;
+
+	
+
+	
+	
+}
+
+
+footer {
+	/* Altura do elemento. */
+	height: 80px;
+	background-color: #f1892a;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+	font-weight: bold;
+
+	/* Junção de flex-grow, flex-shrink e flex-basis.  */
+	/* flex-grow – Habilidade de um flex item crescer. */
+	/* flex-shrink - Capacidade de redução do item.    */
+	
+	flex: 1 1 100vw;
+	
+}
+
+a {
+	/* Remove a decoração padrão do elemento. */
+	text-decoration: none;
+
+	/* Definir a cor da fonte para o padrão do elemento pai. */
+	color: inherit;
+}
+
+.logo img{
+	width: 80px;
+	
+}
+
+.logo{
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	background-color: #fff;
+	width: 150px;
+}
+
+nav a:hover{
+
+	/*color: #a62639;
+
+	padding-bottom: 10px;
+
+	border-bottom: 2px solid #2d898c;
+	
+	background-color: white;
+    color: #2d898c;
+	font-weight: bold;
+
+	border: 1px solid #2d898c;
+	padding: 12px;
+	border-radius: 10px;*/
+
+	
+	background-image: linear-gradient(to right, #f08729, #fed458);
+	color: white;
+	font-weight: solid;
+	
+	padding: 12px;
+	border-radius: 10px;
+	text-shadow: none;
+
+
+
+}
+
+nav a{
+
+	
+	background-color: white;
+    color: black;
+	border-radius: 2px;
+	
+
+
+}
+
+
+.slider{
+	width: 100%;
+	max-width: 1200px;
+	position: relative;
+	margin: 0 auto;
+	
+}
+
+.slick-prev,
+    .slick-next {
+      position: absolute;
+      top: 40%;
+      transform: translateY(-50%);
+      width: 40px;
+      height: 40px;
+      background-color: transparent;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      background-repeat: no-repeat;
+      background-size: contain;
+	  font-size: 0px;
+}
+
+.slick-prev {
+	left: 10px;
+	background-image: url(/assets/img/arrow/prev.png);
+}
+
+.slick-next {
+	right: 10px;
+	background-image: url(/assets/img/arrow/next.png);
+}
+
+
+
+
+
+
+
+.container-noticias{
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+
+		
+
+	
+
+}
+
+.container-noticias h1{
+
+	margin: 0 auto;
+	border-bottom: 2px solid #f1892a; /* largura e estilo da linha */
+	
+	color: #11114e;
+	text-align: center;
+
+	
+	padding: 10px;
+	background-color: #fff;
+	border-radius: 2px;
+
+}
+
+.container-noticias a{
+
+	    
+    text-align: center;
+    background-color: #f1892a;
+    color: white;
+    padding: 12px;
+	border-radius: 10px;
+	font-size: 18px;
+	font-weight: 200px;
+
+
+}
+
+.container-noticias a:hover{
+
+	background-color: white;
+    color: #f1892a;
+	font-weight: bold;
+
+	border: 1px solid #f1892a;
+
+}
+
+.todas-noticias{
+
+	font-weight: solid;
+
+}
+
+
+
+.card-container{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	
+}
+
+
+
+.card, .cardNoticias{
+	border: 1.5px solid #f1892a;
+	border-radius: 10px;
+	margin: 15px;
+	background-color: #fff;
+
+	display: flex;
+	flex-direction: column;
+	flex-basis: 30%;
+	justify-content: space-between;
+	align-items: center;
+	text-align: center;
+
+}
+
+.cardNoticias{
+
+	flex-basis: 70%;
+
+
+}
+
+
+
+.missaoVisaoValores{
+
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 0 auto;
+	
+
+
+}
+
+.subMissaoVisaoValores{
+
+	margin: 15px;
+	flex: 1;
+
+	display: flex;
+	flex-direction: column;
+	flex-basis: 30%;
+	justify-content: space-between;
+	align-items: center;
+	text-align: center;
+	
+
+}
+
+.subMissaoVisaoValores h2{
+
+	font-size: 25px;
+	margin-bottom: 10px;
+	background-color: #fff;
+
+
+}
+
+.subMissaoVisaoValores p{
+
+	width: 100%;
+	text-align: center;
+	line-height: 22px;
+
+
+}
+
+
+
+
+
+
+.card img, .cardNoticias img{
+
+	width: 100%;
+	height: 180px;
+	object-fit: cover;
+	object-position: top;
+	border-radius: 10px;
+	
+
+
+}
+
+.card div, .cardNoticias div{
+
+	padding: 15px;
+	flex-grow: 1;
+
+
+}
+
+.card div p, .cardNoticias div p{
+
+	margin-top: 10px;
+	text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+
+	
+}
+
+.card a, .cardNoticias a{
+
+	margin: 10px 0;
+
+	width: 110px;    
+    text-align: center;
+    background-color: #f1892a;
+    color: white;
+    padding: 12px;
+	border-radius: 10px;
+}
+
+.card a:hover{
+
+	background-color: white;
+    color: #f1892a;
+	font-weight: bold;
+
+	border: 1px solid #f1892a;
+
+}
+
+.container{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+	align-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;    
+    margin: 0 auto;   
+
+
+}
+
+.container img{
+
+	width: 100%;
+    height: 400px;
+	object-fit: center;
+
+}
+
+/*   imagem ao lado do texto */
+
+.container-ladoalado-img{
+
+	width: 100%; /* Defina a largura desejada do contêiner */
+	height: auto; /* Defina a altura desejada do contêiner */
+	overflow: hidden;
+}
+
+.container-ladoalado-img img{
+
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+
+}
+
+
+.container01, .container02{
+    width: 100%;
+    height: 400px;
+
+    
+}
+
+
+
+.vamosimboraimg{
+
+	background-image: url("./assets/img/principal/02.jpg");
+    background-position: center;
+    background-size: cover;
+
+
+}
+
+.oportunizarurbano{
+
+	background-image: url("./assets/img/principal/03.jpg");
+    background-position: center;
+    background-size: cover;
+
+
+}
+
+
+.oportunizarrural{
+
+	background-image: url("./assets/img/principal/04.jpg");
+    background-position: center;
+    background-size: cover;
+
+
+}
+
+.formacaoacs{
+
+	background-image: url("./assets/img/principal/05.jpg");
+    background-position: center;
+    background-size: cover;
+
+
+}
+
+
+.container01, .missao{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+	align-content: center;
+    align-items: center;
+    text-align: center;
+	 
+    
+}
+
+
+
+.missao h2{
+
+	margin: 15px auto;
+	
+	
+	color: #11114e;
+
+
+
+}
+
+.missao p{
+
+	color: #11114e;
+	text-shadow: -2px -2px 0 #fff, 2px -2px 0 #fff, -2px 2px 0 #fff, 2px 2px 0 #fff;
+	
+	width: 90vw;
+
+}
+
+.projetos{
+
+	margin: 0 auto;
+	border-bottom: 2px solid #f1892a; /* largura e estilo da linha */
+	
+	color: #11114e;
+	text-align: center;
+
+	
+	padding: 10px;
+	background-color: #fff;
+	border-radius: 2px;
+
+}
+
+.doacao{
+
+	
+
+
+}
+
+.agrupaDivTexto{
+	
+
+	
+	
+
+
+	height: 250px;
+	display: flex;
+	justify-content: center;
+	display: none;
+
+	
+}
+
+
+
+
+.divTexto{
+
+	width: 80vw;    
+    display: flex;
+    
+	justify-content: center;
+	align-content: center;
+    align-items: center;
+	gap: 40px;
+	margin: 0 auto;
+     
+    
+}
+
+.invertido{
+	flex-direction: row-reverse;
+}
+
+
+
+.divTexto p{
+
+	width: 70%;
+	font-weight: 500;
+    font-style: italic;
+	
+  	text-shadow: -2px -2px 0 white, 2px -2px 0 white, -2px 2px 0 white, 2px 2px 0 white;
+
+}
+
+
+.divTexto img{
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	margin: 25px auto;
+
+
+}
+
+
+.container p, .divTexto p, .missao p{
+
+	line-height: 25px;
+
+	background-color: white;
+    color: black;
+
+
+}
+
+.container h1{
+
+	font-weight: bold;
+	
+
+
+}
+
+.container01{
+	
+
+    color: #000000
+	
+	
+
+}
+
+.doacoes{
+	background-color: #fff;
+
+    color: black;
+	
+
+}
+
+.doacoes p{
+
+	font-size: 30px;
+
+	font-weight: bolder;
+	text-align: center;
+	line-height: 35px;
+	
+}
+
+.h1doacao{
+
+	text-align: center;
+	margin: 20px auto;
+	margin-top: 25px;
+
+	border-bottom: 2px solid #11114e; /* largura e estilo da linha */
+	padding-bottom: 5px;
+	background-color: #fff;
+	border-radius: 5px;
+	
+
+
+}
+
+.doacoes img{
+
+	width: 100px;
+	height: auto;
+}
+
+.doacoes{
+
+	height: 500px;
+}
+
+.imgdoacao img.img{
+
+	height: 500px;
+	width: 50%;
+
+
+}
+
+
+
+.container01 h1{
+
+	border-bottom: 2px solid white; /* largura e estilo da linha */
+	padding-bottom: 15px;
+	width: 95%;
+	margin-top: 10px;
+
+	background-color: white;
+    color: black;
+	font-weight: bold;
+
+
+}
+
+
+.container01 p{
+
+	width: 90%;
+
+	background-color: white;
+    color: black;
+	font-weight: solid;
+	
+	
+	
+
+}
+
+
+
+
+.container-parceiro{
+
+	background-color: #2d898c;
+	width: 100%;
+	
+
+
+	display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+	align-content: center;
+    align-items: center;
+    text-align: center;
+
+
+
+}
+.container-parceiro div{
+
+	margin-bottom: 20px;
+}
+
+.container-parceiro h1{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	color: #fff;
+
+	border-bottom: 2px solid white; /* largura e estilo da linha */
+	padding-bottom: 5px;
+
+
+}
+
+
+
+.container-imagens-parceiros{
+	background-color: white;
+	width: 80%;
+	height: 80%;
+	border-radius: 10px;
+	padding: 30px;
+	
+
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+
+	
+	align-content: center;
+
+	align-items: center;
+
+	gap: 20px;
+	
+
+}
+
+.container-imagens-parceiros img{
+	width: 90px;
+}
+
+.container-contatos{
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	width: 100%;
+
+	
+
+
+
+}
+
+.container-contatos h1{
+	margin-top: 20px;
+	margin-bottom: 30px;
+	color: #11114e;
+
+	border-bottom: 2px solid #f1892a; /* largura e estilo da linha */
+	padding-bottom: 5px; /* espaço entre o texto e a linha */
+	
+	
+
+}
+
+
+.container-contatos div{
+	text-align: center;
+	font-weight: bold;
+	line-height: 25px;
+	width: 80%;
+	margin-top: 20px;
+	margin-bottom: 10px;
+
+}
+
+.container-contatos h1, p{
+	background-color: white;
+}
+
+.container-contatos a{
+	color: #c52727;
+	font-style: bolder;
+}
+
+.container-sociais img{
+	width: 25px;
+
+
+
+}
+
+.container-sociais{
+
+	display: flex;
+
+	gap: 15px;
+
+
+}
+
+
+
+
+.transparencia{
+
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+
+	justify-content: space-around;
+
+	align-content: space-between;
+	text-align: center;
+
+	color: #11114e;
+	width: 90%;
+	margin: 0 auto;
+
+	
+
+    
+}
+
+.transparencia h2{
+
+	margin: 20px auto;
+	border-bottom: 2px solid #11114e; /* largura e estilo da linha */
+	padding-bottom: 5px;
+	background-color: white;
+    
+}
+
+.transparencia a{
+
+	margin-bottom: 20px;
+	background-color: white;
+	padding: 05px;
+	border-radius: 10px;
+
+    
+}
+
+.transparencia h3{
+
+	margin: 20px auto;
+	 /* largura e estilo da linha */
+	padding-bottom: 5px;
+	background-color: white;
+	font-size: 25px;
+    
+}
+
+.transparencia{
+	margin-bottom: 20px;
+
+}
+
+
+
+
+
+footer p{
+	font-size: 15px;
+	background-color:#f1892a;;
+}
+
+
+
+.mainTransparencia{
+
+	background-image: url('/assets/img/bg/noticias.jpg');
+	background-size: contain;
+	background-position: center;
+	background-repeat: repeat;
+
+
+
+}
+
+.mainNoticia{
+
+	width: 100%;
+    min-width: 320px;
+    max-width: 1220px;
+    margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+
+}
+
+.mainNoticia img{
+	max-width: 1200px;
+	width: 100%;
+	margin: 0 auto;
+
+
+}
+
+.mainNoticia h1{
+	margin: 10px auto;
+	text-align: center;
+	background-color: #fff;
+}
+
+.mainNoticia p{
+
+	font-size: 17px;
+    line-height: 20px;
+	text-align: justify;
+	background-color: #fff;
+	width: 95%;
+}
+
+.mainNoticia p a{
+	font-weight: bold;
+}
+
+.maisFotos a{
+
+	text-align: center;
+	align-items: center;
+	width: 90%;
+	
+	font-weight: bold;
+	font-size: 18px;
+
+	background-color: white;
+	color: #f08729;
+	border-radius: 10px;
+	text-decoration: underline;
+	
+	
+	padding: 0px;
+	
+	
+
+}
+
+.maisFotos{
+	display: flex;
+	width: 100%;
+	justify-content: center;
+
+	margin-bottom: 12px;
+
+
+
+}
+
+.aGaleria a{
+
+	margin-top: 12px;
+	
+
+
+
+
+}
+
+
+.area {
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.area-image {
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 0 auto 35px auto;
+    overflow-x: scroll;
+}
+
+
+.area-image img {
+    width: 315px;
+    margin: 10px;
+}
+
+.image-sombra {
+    box-shadow: 10px 10px 10px #939393;
+}
+
+.containerGaleria{
+	display: flex;
+
+	flex-wrap: wrap;
+
+	width: 100%;
+    max-width: 1024px;
+}
+
+.imagemGaleria{
+
+	flex-basis: calc(100% / 3); /* Define a largura de cada imagem */
+	box-sizing: border-box; /* Considera a largura total com padding e borda */
+	padding: 4px;
+
+
+
+}
+
+.imageGaleria img{
+
+	width: 100%; /* Ajusta a imagem para preencher a largura do contêiner */
+	height: auto;
+
+
+}
+
+
+
+
+
+
+/* Altera o estilo dos elementos para serem apresentados */ 
+/* em telas menores que 717px. */
+@media only screen and (max-width: 717px) {
+	#openMenu, #closeMenu {
+		/* Retorna a visibilidade padrão. */
+		display: block;
+	}
+
+	#openMenu {
+		/* Espaço a esquerda será preenchido automaticamente
+		   colocando os itens a direita. */
+		margin-left: auto;
+	}
+
+	#closeMenu {
+		/* Torna a posição do elemento fixa. */
+		position: fixed;
+
+		/* Dispõe o elemento a 15px da esquerda. */
+		right: 15px;
+
+		/* Dispõe o elemento a 15px do topo. */
+		top: 15px;
+	}
+
+	header {
+		/* Ordem da visualização dos elementos. */
+		order: 0;
+	}
+
+	nav {
+		/* Ordem da visualização dos elementos. */
+		order: 1;
+
+		/* Torna a posição do elemento fixa. */
+		position: fixed;
+
+		/* Ocupa 100% da largura da tela de exibição. */
+		width: 100vw;
+
+		/* Ocupa 100% da altura da tela de exibição. */
+		height: 100vh;
+
+		/* Cor em RGB, mais transparência. */
+		background: rgba(255, 255, 255, 0.8);
+
+		/* Dispõe os itens em coluna. */
+		flex-direction: column;
+
+		/* Alinha os itens na horizontal. */
+		align-items: center;
+
+		/* Alinha os itens na vertical. */
+		justify-content: center;
+
+		/* Remove a margem externa de todos os lados do elemento. */
+		margin: 0;
+
+		/* Oculta o elemento. */
+		display: none;
+
+		/* Invisivel */
+		opacity: 0;
+
+		/* Velocidade de transição de um estado para outro. */
+		transition: 0.3s;
+
+		z-index: 1;
+	}
+
+	nav a {
+		/* Margem de todos os lados. */
+		margin: 3%;
+	}
+
+	main {
+		/* Ordem da visualização dos elementos. */
+		order: 2;
+
+		/* Realizar a subtração de 100% da altura vertical menos a soma    */
+		/* da altura dos elementos ( 300px ) com as suas margens ( 30px ). */
+		/*height: calc(100vh - 330px);
+		height: 100vh;*/	
+		
+	}
+
+	
+
+	footer {
+		/* Ordem da visualização dos elementos. */
+		order: 3;
+	}
+
+	.logo img{
+		width: 50px;
+		
+	}
+
+	.logo{
+		width: 100px;
+	}
+
+	.container{
+		
+		flex-direction: column;
+	}
+	
+	.container p, .divTexto p{
+
+		line-height: 20px;
+		width: 95%;
+		text-align: center;
+	
+	
+	}
+
+	.container-imagens-parceiros img{
+		width: 80px;
+	}
+
+	.card, .cardNoticias{
+		flex-basis: 100%;
+	}
+
+	
+
+
+	.container01 p{
+
+		padding-top: 10px;
+
+		margin-bottom: 10px;
+		text-align: justify;
+		width: 90%;
+
+
+
+	}
+
+	.container01{
+		height: auto;
+	}
+
+	.slideshow {
+
+		
+		height: 35vh;
+		
+		
+	}
+
+	.divTexto{
+
+		width: 90vw;    
+		display: flex;
+		flex-direction: column;		
+		justify-content: center;
+		align-content: center;
+		align-items: center;
+		gap: 0px;	 
+		
+	}
+	.divTexto p{
+
+		
+		margin-bottom: 15px;	 
+		
+	}
+	.divTexto img{
+		width: 180px;
+		height: 180px;
+
+		
+			 
+		
+	}
+
+	.doacoes{
+
+
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		text-align: center;
+		margin: 0 auto;		
+	
+	
+	}
+
+	.doacoes img{
+
+		padding-top: 10px;
+
+	}
+
+	.doacoes p{
+		text-align: center;
+		font-size: medium;
+	}
+
+	.imgdoacao img.img{
+
+		height: 300px;
+		width: 100%;
+	
+	
+	}
+
+	.imgdoacao{
+		flex-direction: column-reverse;
+
+
+	}
+
+	.agrupaDivTexto{
+
+		height: 500px;
+
+
+
+	}
+
+
+	.slick-prev,
+    .slick-next {
+      
+      top: 34%;
+      
+      width: 30px;
+      height: 30px;
+	}
+
+	.slider img{
+		width: 100%;
+		
+	}
+
+	.missaoVisaoValores{
+
+		
+		flex-direction: column;
+		width: 100%;
+		
+	
+	
+	}
+
+	.mainNoticia .title{
+		
+		
+		width: 95%;
+		
+	}
+
+	.imagemGaleria{
+
+		
+		padding: 2px;
+	
+	
+	
+	}
+
+	
+	
+      
+
+
+
+	
+	
+
+
+}
+
+@media only screen and (max-width: 983px) {
+	#openMenu, #closeMenu {
+		/* Retorna a visibilidade padrão. */
+		display: block;
+	}
+
+	#openMenu {
+		/* Espaço a esquerda será preenchido automaticamente
+		   colocando os itens a direita. */
+		margin-left: auto;
+	}
+
+	#closeMenu {
+		/* Torna a posição do elemento fixa. */
+		position: fixed;
+
+		/* Dispõe o elemento a 15px da esquerda. */
+		right: 15px;
+
+		/* Dispõe o elemento a 15px do topo. */
+		top: 15px;
+	}
+
+	header {
+		/* Ordem da visualização dos elementos. */
+		order: 0;
+	}
+
+	nav {
+		/* Ordem da visualização dos elementos. */
+		order: 1;
+
+		/* Torna a posição do elemento fixa. */
+		position: fixed;
+
+		/* Ocupa 100% da largura da tela de exibição. */
+		width: 100vw;
+
+		/* Ocupa 100% da altura da tela de exibição. */
+		height: 100vh;
+
+		/* Cor em RGB, mais transparência. */
+		background: rgba(255, 255, 255, 0.8);
+
+		/* Dispõe os itens em coluna. */
+		flex-direction: column;
+
+		/* Alinha os itens na horizontal. */
+		align-items: center;
+
+		/* Alinha os itens na vertical. */
+		justify-content: center;
+
+		/* Remove a margem externa de todos os lados do elemento. */
+		margin: 0;
+
+		/* Oculta o elemento. */
+		display: none;
+
+		/* Invisivel */
+		opacity: 0;
+
+		/* Velocidade de transição de um estado para outro. */
+		transition: 0.3s;
+
+		z-index: 1;
+	}
+
+	nav a {
+		/* Margem de todos os lados. */
+		margin: 3%;
+	}
+
+	main {
+		/* Ordem da visualização dos elementos. */
+		order: 2;
+
+		/* Realizar a subtração de 100% da altura vertical menos a soma    */
+		/* da altura dos elementos ( 300px ) com as suas margens ( 30px ). */
+		/*height: calc(100vh - 330px);
+		height: 100vh;*/
+		
+	}
+
+	
+
+	footer {
+		/* Ordem da visualização dos elementos. */
+		order: 3;
+	}
+
+	/*.agrupaDivTexto{
+
+		background-image: url('/assets/img/bg/noticias.jpg');
+
+		background-size: contain;
+		
+		background-repeat: repeat;
+
+		height: 500px;
+
+
+
+	} 
+
+	.missao{
+
+		background-image: url('/assets/img/bg/noticias.jpg');
+
+		background-size: contain;
+		
+		background-repeat: repeat;
+
+		height: 500px;
+
+
+
+	}*/
+	
+}
+
+	
