@@ -496,20 +496,22 @@ nav a{
 	width: 100%; /* Defina a largura desejada do contêiner */
 	height: auto; /* Defina a altura desejada do contêiner */
 	overflow: hidden;
+	
 }
 
 .container-ladoalado-img img{
 
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
+	width: 450px;
+	height: 450px;
+	
 
 }
 
 
 .container01, .container02{
     width: 100%;
-    height: 400px;
+    height: 500px;
+	
 
     
 }
@@ -554,14 +556,16 @@ nav a{
 }
 
 
-.container01, .missao{
+.container01{
     
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
 	align-content: center;
     align-items: center;
     text-align: center;
+
+	margin-right: 60px;
 	 
     
 }
@@ -753,9 +757,10 @@ nav a{
 .container01 h1{
 
 	border-bottom: 2px solid white; /* largura e estilo da linha */
-	padding-bottom: 15px;
+	
 	width: 95%;
 	margin-top: 10px;
+	margin-bottom: 10px;
 
 	background-color: white;
     color: black;
@@ -772,6 +777,8 @@ nav a{
 	background-color: white;
     color: black;
 	font-weight: solid;
+	text-align: justify;
+	
 	
 	
 	
