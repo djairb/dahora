@@ -1,5 +1,12 @@
 @charset "UTF-8";
 
+:root {
+	--verde-escuro: #584C2D; /* Vermelho */
+	--cinza-claro: #F9F7EE; /* Vermelho */ 
+	--verde-medio: #B2974D; /* Vermelho */ 
+	--verde:claro: #DCCFA0
+}
+
 /* Propriedades que se aplicam a todos os elementos da página. */
 * {
 	/* Remove a margem externa de todos os lados do elemento. */
@@ -96,9 +103,7 @@ header {
 	flex: 1 1 100vw;
 
 
-	background-image: url('/assets/img/bg/header.jpg');
-	background-size: cover;
-	background-position: center;
+	
 }
 
 
@@ -137,7 +142,7 @@ main {
 	
 	margin: 0 auto;
 
-	background-color: #F9F7EE;
+	background-color: var(--cinza-claro)
 
 	
 	
@@ -174,7 +179,8 @@ a {
 }
 
 .logo img{
-	width: 80px;
+	width: 90%;
+	margin-left: 10px;
 	
 }
 
@@ -233,7 +239,7 @@ nav a{
 	width: 100%;
 	max-width: 1200px;
 	position: relative;
-	margin: 0 auto;
+	margin: 20px auto 0px auto;
 	
 }
 
@@ -499,16 +505,17 @@ nav a{
 
 .container-ladoalado-img img{
 
-	width: 450px;
-	height: 450px;
+	width: 420px;
+	height: 420px;
 	
 
 }
 
 
-.container01, .container02{
+.container01{
     width: 100%;
     height: 500px;
+	
 	
 
     
@@ -671,16 +678,6 @@ nav a{
 }
 
 
-.container p, .divTexto p, .missao p{
-
-	line-height: 25px;
-
-	background-color: white;
-    color: black;
-
-
-}
-
 .container h1{
 
 	font-weight: bold;
@@ -689,14 +686,6 @@ nav a{
 
 }
 
-.container01{
-	
-
-    color: #000000
-	
-	
-
-}
 
 .doacoes{
 	background-color: #fff;
@@ -754,15 +743,16 @@ nav a{
 
 .container01 h1{
 
-	border-bottom: 2px solid white; /* largura e estilo da linha */
 	
+	color: var(--verde-medio);
 	width: 95%;
 	margin-top: 10px;
-	margin-bottom: 10px;
+	margin-bottom: 15px;
+	border-bottom: 1.3px solid var(--verde-escuro)
 
-	background-color: white;
-    color: black;
-	font-weight: bold;
+	
+	
+	
 
 
 }
@@ -772,10 +762,11 @@ nav a{
 
 	width: 90%;
 
-	background-color: white;
+	
     color: black;
 	font-weight: solid;
 	text-align: justify;
+	color: var(--verde-escuro);
 	
 	
 	
@@ -885,9 +876,7 @@ nav a{
 
 }
 
-.container-contatos h1, p{
-	background-color: white;
-}
+
 
 .container-contatos a{
 	color: #c52727;
@@ -1221,7 +1210,8 @@ footer p{
 	}
 
 	.logo img{
-		width: 50px;
+		width: 120px;
+		margin-left: 50px;
 		
 	}
 
@@ -1252,6 +1242,10 @@ footer p{
 	}
 
 	
+	.container01{
+
+		margin-right: 0px;
+	}
 
 
 	.container01 p{
