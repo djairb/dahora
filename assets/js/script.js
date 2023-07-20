@@ -54,12 +54,33 @@ closeMenu.addEventListener('click', () => {
 $('.slider').slick({
 
 	
-    slidesToShow: 1,
+    slidesToShow: 3,
+	
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 2000,
+	
 	prevArrow: $('.slick-prev'), 
-    nextArrow: $('.slick-next')
+    nextArrow: $('.slick-next'),
+
+	responsive: [
+		{
+		  breakpoint: 717,
+		  settings: {
+			slidesToShow: 2,
+			slidesToScroll: 1,
+			infinite: true,
+			
+		  }
+		}
+	  ]
+
+
+
+
+
+
+
 	
 }
 

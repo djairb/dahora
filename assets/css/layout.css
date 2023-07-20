@@ -31,9 +31,19 @@ body{
 */
 
   
-  
-/*slider fim
-*/
+.slider{
+	width: 90%;
+	margin: 20px auto 0px auto;
+	
+
+
+}
+
+.slider img{
+	width: 350px;
+	height: 350px;
+}
+
 
 
 #openMenu, #closeMenu {
@@ -140,6 +150,8 @@ main {
 	
 	flex-direction: column;
 	
+	
+	
 	margin: 0 auto;
 
 	background-color: var(--cinza-claro)
@@ -234,14 +246,6 @@ nav a{
 
 }
 
-
-.slider{
-	width: 100%;
-	max-width: 1200px;
-	position: relative;
-	margin: 20px auto 0px auto;
-	
-}
 
 .slick-prev,
     .slick-next {
@@ -1355,11 +1359,7 @@ footer p{
       height: 30px;
 	}
 
-	.slider img{
-		width: 95%;
-		margin: 0 auto;
-		
-	}
+	
 
 	.missaoVisaoValores{
 
@@ -1386,6 +1386,22 @@ footer p{
 	
 	
 	}
+
+	.slider{
+		width: 90%;
+		margin: 20px auto 0px auto;
+		
+	
+	
+	}
+	
+	.slider img{
+		width: 230px;
+		height: 230px;
+	}
+
+	
+	
 
 	
 	
