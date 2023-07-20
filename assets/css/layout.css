@@ -275,7 +275,7 @@ nav a{
 
 
 
-.container-noticias{
+.container-obras{
 
 	display: flex;
 	flex-direction: column;
@@ -288,22 +288,24 @@ nav a{
 
 }
 
-.container-noticias h1{
+.container-obras h1{
 
 	margin: 0 auto;
-	border-bottom: 2px solid #f1892a; /* largura e estilo da linha */
 	
-	color: #11114e;
+	
+	
 	text-align: center;
 
 	
-	padding: 10px;
-	background-color: #fff;
-	border-radius: 2px;
+	color: var(--verde-medio);
+	width: 500px;
+	margin-top: 10px;
+	margin-bottom: 15px;
+	border-bottom: 1.3px solid var(--verde-escuro)
 
 }
 
-.container-noticias a{
+.container-obras a{
 
 	    
     text-align: center;
@@ -317,7 +319,7 @@ nav a{
 
 }
 
-.container-noticias a:hover{
+.container-obras a:hover{
 
 	background-color: white;
     color: #f1892a;
