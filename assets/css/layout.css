@@ -137,11 +137,9 @@ main {
 	
 	margin: 0 auto;
 
-	background-image: url('/assets/img/bg/noticias.jpg');
-	background-size: contain;
-	background-position: center;
-	background-repeat: repeat;
+	background-color: #F9F7EE;
 
+	
 	
 
 	
@@ -983,10 +981,7 @@ footer p{
 
 .mainTransparencia{
 
-	background-image: url('/assets/img/bg/noticias.jpg');
-	background-size: contain;
-	background-position: center;
-	background-repeat: repeat;
+	
 
 
 
@@ -1365,7 +1360,8 @@ footer p{
 	}
 
 	.slider img{
-		width: 100%;
+		width: 95%;
+		margin: 0 auto;
 		
 	}
 
