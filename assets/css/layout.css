@@ -4,7 +4,7 @@
 	--verde-escuro: #584C2D; /* Vermelho */
 	--cinza-claro: #F9F7EE; /* Vermelho */ 
 	--verde-medio: #B2974D; /* Vermelho */ 
-	--verde:claro: #DCCFA0
+	--verde-claro: #DCCFA0
 }
 
 /* Propriedades que se aplicam a todos os elementos da página. */
@@ -247,32 +247,6 @@ nav a{
 }
 
 
-.slick-prev,
-    .slick-next {
-      position: absolute;
-      top: 40%;
-      transform: translateY(-50%);
-      width: 40px;
-      height: 40px;
-      background-color: transparent;
-      border: none;
-      outline: none;
-      cursor: pointer;
-      background-repeat: no-repeat;
-      background-size: contain;
-	  font-size: 0px;
-}
-
-.slick-prev {
-	left: 10px;
-	background-image: url(/assets/img/arrow/prev.png);
-}
-
-.slick-next {
-	right: 10px;
-	background-image: url(/assets/img/arrow/next.png);
-}
-
 
 
 
@@ -486,7 +460,8 @@ nav a{
     align-items: center;
     text-align: center;
     width: 100%;    
-    margin: 0 auto;   
+    margin: 0 auto;
+	  
 
 
 }

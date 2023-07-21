@@ -1,0 +1,43 @@
+@charset 'UTF-8';
+/* Slider */
+.slick-prev,
+    .slick-next {
+        position: absolute;
+        top: 40%;
+        transform: translateY(-50%);
+        width: 40px;
+        height: 40px;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        background-repeat: no-repeat;
+        background-size: contain;
+        font-size: 0px;
+  }
+  
+.slick-prev {
+    left: 10px;
+    background-image: url(/assets/img/arrow/prev.png);
+}
+
+.slick-next {
+    right: 10px;
+    background-image: url(/assets/img/arrow/next.png);
+}
+
+
+
+@media only screen and (max-width: 717px) {	
+
+	.slick-prev,
+    .slick-next {
+      
+      top: 34%;
+      
+      width: 30px;
+      height: 30px;
+	}
+
+}
+  

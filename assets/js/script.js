@@ -56,10 +56,11 @@ $('.slider').slick({
 	
     slidesToShow: 3,
 	
-    slidesToScroll: 1,
+    slidesToScroll: 2,
     autoplay: true,
-    autoplaySpeed: 2000,
-	
+    autoplaySpeed: 1500,
+	infinite: true,
+	arrows: true,
 	prevArrow: $('.slick-prev'), 
     nextArrow: $('.slick-next'),
 
@@ -70,6 +71,7 @@ $('.slider').slick({
 			slidesToShow: 2,
 			slidesToScroll: 1,
 			infinite: true,
+			arrows: true
 			
 		  }
 		}
