@@ -4,7 +4,7 @@
 	--verde-escuro: #584C2D; /* Vermelho */
 	--cinza-claro: #F9F7EE; /* Vermelho */ 
 	--verde-medio: #B2974D; /* Vermelho */ 
-	--verde-claro: #DCCFA0
+	--verde-claro: #DCCFA0;
 }
 
 /* Propriedades que se aplicam a todos os elementos da página. */
@@ -276,7 +276,7 @@ nav a{
 
 	
 	color: var(--verde-medio);
-	width: 500px;
+	width: 50%;
 	margin-top: 10px;
 	margin-bottom: 15px;
 	border-bottom: 1.3px solid var(--verde-escuro)
@@ -461,6 +461,7 @@ nav a{
     text-align: center;
     width: 100%;    
     margin: 0 auto;
+	background-color: var(--cinza-claro);
 	  
 
 
@@ -1325,14 +1326,7 @@ footer p{
 	}
 
 
-	.slick-prev,
-    .slick-next {
-      
-      top: 34%;
-      
-      width: 30px;
-      height: 30px;
-	}
+	
 
 	
 
@@ -1371,8 +1365,16 @@ footer p{
 	}
 	
 	.slider img{
-		width: 230px;
-		height: 230px;
+		width: 200px;
+		height: 200px;
+	}
+
+	.container-obras h1{
+
+		width: 95%;
+
+
+
 	}
 
 	
