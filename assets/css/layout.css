@@ -167,11 +167,11 @@ main {
 footer {
 	/* Altura do elemento. */
 	height: 80px;
-	background-color: #f1892a;
+	background-color: var(--verde-escuro);
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	color: #fff;
+	color: var(--cinza-claro);
 	font-weight: bold;
 
 	/* Junção de flex-grow, flex-shrink e flex-basis.  */
@@ -266,7 +266,7 @@ nav a{
 
 }
 
-.container-obras h1{
+.container-obras h1, .container-contatos h1{
 
 	margin: 0 auto;
 	
@@ -287,10 +287,10 @@ nav a{
 
 	    
     text-align: center;
-    background-color: #f1892a;
-    color: white;
+    background-color: var(--verde-escuro);
+    color: var(--cinza-claro);
     padding: 12px;
-	border-radius: 10px;
+	border-radius: 3px;
 	font-size: 18px;
 	font-weight: 200px;
 
@@ -299,11 +299,11 @@ nav a{
 
 .container-obras a:hover{
 
-	background-color: white;
-    color: #f1892a;
+	background-color: var(--cinza-claro);
+    color: var(--verde-escuro);
 	font-weight: bold;
 
-	border: 1px solid #f1892a;
+	border: 1px solid var(--verde-escuro);
 
 }
 
@@ -326,11 +326,11 @@ nav a{
 
 
 
-.card, .cardNoticias{
-	border: 1.5px solid #f1892a;
+.card{
+	border: 1.5px solid var(--verde-escuro);
 	border-radius: 10px;
 	margin: 15px;
-	background-color: #fff;
+	
 
 	display: flex;
 	flex-direction: column;
@@ -421,10 +421,20 @@ nav a{
 
 }
 
-.card div p, .cardNoticias div p{
+.card div p{
 
 	margin-top: 10px;
-	text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+	color: var(--verde-escuro);
+	
+
+	
+}
+
+.card div h3{
+
+	
+	color: var(--verde-escuro);
+	
 
 	
 }
@@ -435,19 +445,19 @@ nav a{
 
 	width: 110px;    
     text-align: center;
-    background-color: #f1892a;
-    color: white;
+    background-color: var(--verde-escuro);
+    color: var(--cinza-claro);
     padding: 12px;
-	border-radius: 10px;
+	border-radius: 3px;
 }
 
 .card a:hover{
 
-	background-color: white;
-    color: #f1892a;
+	background-color: #f9f8ef;
+    color: var(--verde-escuro);
 	font-weight: bold;
 
-	border: 1px solid #f1892a;
+	border: 1px solid var(--verde-escuro);
 
 }
 
@@ -827,7 +837,9 @@ nav a{
 	flex-direction: column;
 	justify-content: space-around;
 	align-items: center;
-	width: 100%;
+	
+	background-color: var(--cinza-claro);
+	margin-top: 15px;
 
 	
 
@@ -835,17 +847,7 @@ nav a{
 
 }
 
-.container-contatos h1{
-	margin-top: 20px;
-	margin-bottom: 30px;
-	color: #11114e;
 
-	border-bottom: 2px solid #f1892a; /* largura e estilo da linha */
-	padding-bottom: 5px; /* espaço entre o texto e a linha */
-	
-	
-
-}
 
 
 .container-contatos div{
@@ -945,18 +947,10 @@ nav a{
 
 footer p{
 	font-size: 15px;
-	background-color:#f1892a;;
-}
-
-
-
-.mainTransparencia{
-
 	
-
-
-
 }
+
+
 
 .mainNoticia{
 
@@ -1369,7 +1363,7 @@ footer p{
 		height: 160px;
 	}
 
-	.container-obras h1{
+	.container-obras h1, .container-contatos h1{
 
 		width: 95%;
 
