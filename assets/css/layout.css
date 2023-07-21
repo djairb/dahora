@@ -487,8 +487,8 @@ nav a{
 
 .container-ladoalado-img img{
 
-	width: 420px;
-	height: 420px;
+	width: 400px;
+	height: 400px;
 	
 
 }
@@ -1376,6 +1376,17 @@ footer p{
 
 
 	}
+
+	.container-ladoalado-img img{
+
+		margin-top: 15px;
+
+		width: 230px;
+		height: 230px;
+		
+	
+	}
+	
 
 	
 	
